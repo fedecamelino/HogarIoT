@@ -7,6 +7,7 @@ namespace HogarIoT
 {
     class HogarIoTContext : DbContext
     {
+        DbSet<Usuario> Usuarios { get; set; }
         DbSet<Dispositivo> Dispositivos { get; set; }
 
         protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)

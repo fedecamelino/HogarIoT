@@ -7,5 +7,7 @@ namespace HogarIoT
     class Camara
     {
         public bool Grabar { get; set; }
+    
+    //fedegato
     }
 }

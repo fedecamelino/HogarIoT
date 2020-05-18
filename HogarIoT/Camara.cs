@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HogarIoT
 {
-    class Camara
+    class Camara : Dispositivo
     {
         public bool Grabar { get; set; }
     }

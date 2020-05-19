@@ -40,6 +40,8 @@ namespace HogarIoT
             //Mostrar
             Console.WriteLine(usuario.NombreUsuario);
             Console.WriteLine(usuario.Dispositivos.ElementAt(0).Nombre);
+
+            Console.ReadKey();
         }
     }
 }

@@ -5,14 +5,13 @@ using System.Text;
 
 namespace HogarIoT
 {
-    class HogarIoTContext : DbContext
+    public class HogarIoTContext : DbContext
     {
-        //DbSet<Usuario> Usuarios { get; set; }??????????
-        DbSet<Dispositivo> Dispositivos { get; set; }
+        public DbSet<Dispositivo> Dispositivos { get; set; }
 
         protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;DataBase=HogarIoTDB;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;DataBase=HogarIoTDB3;Trusted_Connection=true");
         }
     }
 }

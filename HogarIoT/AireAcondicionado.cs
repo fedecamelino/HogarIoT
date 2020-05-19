@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HogarIoT
 {
-    class AireAcondicionado : Dispositivo
+    public class AireAcondicionado : Dispositivo
     {
         public int temperatura { get; set; }
         public Modo Mode { get; set; }

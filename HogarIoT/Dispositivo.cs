@@ -4,10 +4,10 @@ using System.Text;
 
 namespace HogarIoT
 {
-    class Dispositivo
+    public class Dispositivo
     {
         public string Nombre { get; set; }
-        public int Id { get; set; } //HasNoKey()?????
+        public int Id { get; set; }
         public Estado Estado { get; set; }
 
         public void CambiarEstado (Estado estado)

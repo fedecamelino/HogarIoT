@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HogarIoT
 {
-    class Luz : Dispositivo
+    public class Luz : Dispositivo
     {
         public int Intensidad { get; set; }
     }

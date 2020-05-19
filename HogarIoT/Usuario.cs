@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HogarIoT
 {
-    class Usuario
+    public class Usuario
     {
         //public int Id_User { get; set; }??????????
         public string NombreUsuario { get; set; }

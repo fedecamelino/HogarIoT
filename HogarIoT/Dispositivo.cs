@@ -10,9 +10,9 @@ namespace HogarIoT
         public int Id { get; set; }
         public Estado Estado { get; set; }
 
-        public void CambiarEstado (Estado estado)
+        public void CambiarEstado (TipoEstado estado)
         {
-            this.Estado = estado;
+            this.Estado.DescripcionEstado = estado;
         }
     }
 }

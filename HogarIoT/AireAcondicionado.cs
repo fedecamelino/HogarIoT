@@ -6,7 +6,12 @@ namespace HogarIoT
 {
     public class AireAcondicionado : Dispositivo
     {
-        public int temperatura { get; set; }
-        public Modo Mode { get; set; }
+        public int Temperatura { get; set; }
+        public Modo Modo { get; set; }
+
+        public void CambiarModo (TipoModo modo)
+        {
+            this.Modo.DescripcionModo = modo;
+        }
     }
 }

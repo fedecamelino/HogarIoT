@@ -12,10 +12,12 @@ namespace HogarIoT
         public DbSet<Camara> Camaras { get; set; }
         public DbSet<Heladera> Heladeras { get; set; }
         public DbSet<Luz> Luces { get; set; }
+        public DbSet<Estado> Estados { get; set; }
+        public DbSet<Modo> Modos { get; set; }
 
         protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;DataBase=HogarIoTDB4;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;DataBase=HogarIoTDB6;Trusted_Connection=true");
         }
     }
 }

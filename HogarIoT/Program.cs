@@ -7,7 +7,7 @@ namespace HogarIoT
     class Program
     {
         static void Main(string[] args)
-        {   
+        {
             //Creacion
             Usuario usuario = new Usuario();
 
@@ -26,15 +26,15 @@ namespace HogarIoT
             usuario.Dispositivos.Add(heladera1);
 
             luz1.Nombre = "Luz puerta entrada";
-            luz1.CambiarEstado(Estado.SIN_CONEXION);
+            luz1.CambiarEstado(TipoEstado.SIN_CONEXION);
             usuario.Dispositivos.Add(luz1);
 
             camara1.Id = 3;
             camara1.Grabar = true;
             usuario.Dispositivos.Add(camara1);
 
-            AA1.Mode = Modo.CALOR;
-            AA1.temperatura = 27;
+            AA1.CambiarModo(TipoModo.CALOR);
+            AA1.Temperatura = 27;
             usuario.Dispositivos.Add(AA1);
 
             //Mostrar
